@@ -1,0 +1,11 @@
+usr/bin/seec-cc
+usr/bin/seec-ld
+usr/bin/seec-print
+usr/bin/seec-view
+usr/lib/seec
+usr/lib/libseecRuntimeTracer.so
+usr/lib/libseecRuntimeTracer.so.*
+usr/share/applications/seec.desktop
+usr/share/mime/packages/seec.xml
+usr/share/pixmaps/seec.png
+

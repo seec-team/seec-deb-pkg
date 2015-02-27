@@ -1,0 +1,59 @@
+seec (0.26.0~pr2-1~trustyppa1) trusty; urgency=medium
+
+  * Pre-release test for 0.26.0.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Fri, 27 Feb 2015 11:07:46 +0800
+
+seec (0.26.0~pr1~trustyppa1) trusty; urgency=medium
+
+  * Pre-release test for 0.26.0.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Fri, 13 Feb 2015 13:36:57 +0800
+
+seec (0.25.2-1~utopicppa3) trusty; urgency=medium
+
+  * Correct dependency on ICU to libicu52.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Sat, 15 Nov 2014 11:49:36 +0800
+
+seec (0.25.2-1~trustyppa1) trusty; urgency=medium
+
+  * Allow uninitialized memory to be passed to fwrite.
+  * Record changes that getopt makes to supplied argument vector.
+  * Support getting pointer objects for ConstantExpr GEP with no notional over indexing.
+  * SimpleWrapper: Don't record global variable changes if the variable's allocation is not known to SeeC.
+  * SimpleWrapper: Set the pointer object for modified global variables to be new and valid.
+  * Only scroll the graph to highlighted values if they aren't already visible.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Wed, 22 Oct 2014 05:54:16 +0800
+
+seec (0.25.1-1) trusty; urgency=low
+
+  * Fix bug with instrumentation of PHI nodes.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Thu, 16 Oct 2014 09:15:34 +0800
+
+seec (0.25-2) trusty; urgency=low
+
+  * Fix dependency on libcurl.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Wed, 15 Oct 2014 16:39:05 +0800
+
+seec (0.25-1) trusty; urgency=low
+
+  * Release for Semester 2 2014.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Wed, 15 Oct 2014 11:56:30 +0800
+
+seec (0.2-1) raring; urgency=low
+
+  * Preview release
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Fri, 05 Jul 2013 07:23:56 +0800
+
+seec (0.1-1) raring; urgency=low
+
+  * Initial release
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Wed, 12 Jun 2013 12:49:25 +0800
+

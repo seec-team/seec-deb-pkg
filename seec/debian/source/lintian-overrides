@@ -1,0 +1,5 @@
+# These errors are caused by SeeC's dependencies.
+seec source: outdated-autotools-helper-file
+seec source: ancient-autotools-helper-file
+seec source: ancient-libtool
+
