@@ -24,8 +24,27 @@ LICENSE
 README.md
 ```
 
+
+## Create the "upstream" source package
+
 The `create_orig.sh` script is a simple helper to create an appropriate "upstream" source package from the `seec` directory.
 In the root directory, we simply run:  
 `$` `./create_orig.sh` `0.26.0`  
 Replacing the `0.26.0` with whichever version number is appropriate.
+
+
+## Build binary packages for local testing
+
+`seec/ $` `debuild` `-us` `-uc`  
+
+
+## Clean the build
+
+`seec/ $` `debuild` `clean`  
+`seec/ $` `rm` `-rf` `temp/`  
+
+
+## Build source package
+
+`seec/ $` `debuild` `-S`  
 
