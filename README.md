@@ -12,13 +12,20 @@ Within the `seec` folder, we must create a `src` folder containing the source co
 The entire structure should look like this:
 
 ```
-seec
-+-- debian
-+-- src
-    +-- llvm
-    +-- seec
-    +-- wxWidgets
+seec/
++-- debian/
++-- src/
+    +-- llvm/
+    +-- seec/
+    +-- wxWidgets/
 +-- Makefile
+create_orig.sh
+LICENSE
+README.md
 ```
 
+The `create_orig.sh` script is a simple helper to create an appropriate "upstream" source package from the `seec` directory.
+In the root directory, we simply run:  
+`$` `./create_orig.sh` `0.26.0`  
+Replacing the `0.26.0` with whichever version number is appropriate.
 
