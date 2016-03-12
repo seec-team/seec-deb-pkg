@@ -54,7 +54,7 @@ $(DIR_TEMP_INSTALL)/llvmtemp/bin/llvm-config : $(DIR_TEMP_BUILD)/llvmtemp/Makefi
 #
 $(DIR_TEMP_BUILD)/llvmtemp/Makefile : 
 	$(ECHO) configure llvm
-	mkdir -p $(DIR_TEMP_BUILD)/llvmtemp && cd $(DIR_TEMP_BUILD)/llvmtemp && $(CURDIR)/src/llvm/configure --enable-cxx11 --enable-optimized --prefix=/llvmtemp
+	mkdir -p $(DIR_TEMP_BUILD)/llvmtemp && cd $(DIR_TEMP_BUILD)/llvmtemp && cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=/llvmtemp -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_EH=true -DLLVM_ENABLE_PIC=true -DLLVM_ENABLE_RTTI=true $(CURDIR)/src/llvm
 
 #
 # wxWidgets - compile if wx-config is not installed.
