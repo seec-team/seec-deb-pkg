@@ -31,7 +31,7 @@ clean :
 #
 # SeeC - compile if seec-cc has not been built.
 #
-$(DIR_TEMP_BUILD)/seec/tools/seec-cc/seec-cc : $(DIR_TEMP_INSTALL)/wxWidgets/bin/wx-config $(DIR_TEMP_INSTALL)/llvm/bin/llvm-config $(DIR_TEMP_BUILD)/seec/Makefile
+$(DIR_TEMP_BUILD)/seec/tools/seec-cc/seec-cc : $(DIR_TEMP_INSTALL)/wxWidgets/bin/wx-config $(DIR_TEMP_INSTALL)/llvmtemp/bin/llvm-config $(DIR_TEMP_BUILD)/seec/Makefile
 	$(ECHO) build seec
 	cd $(DIR_TEMP_BUILD)/seec && make
 
@@ -40,21 +40,21 @@ $(DIR_TEMP_BUILD)/seec/tools/seec-cc/seec-cc : $(DIR_TEMP_INSTALL)/wxWidgets/bin
 #
 $(DIR_TEMP_BUILD)/seec/Makefile :
 	$(ECHO) configure seec
-	mkdir -p $(DIR_TEMP_BUILD)/seec && cd $(DIR_TEMP_BUILD)/seec && cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_INSTALL=$(CURDIR)/$(DIR_TEMP_INSTALL)/llvm -DICU_INSTALL=$(ICU_INSTALL) -DWX_INSTALL=$(CURDIR)/$(DIR_TEMP_INSTALL)/wxWidgets -DWX_TOOLCHAIN=gtk2-unicode-static-3.0 -DMULTIARCH=$(DEB_BUILD_MULTIARCH) -DCMAKE_INSTALL_PREFIX:PATH=$(PREFIX) $(CURDIR)/src/seec
+	mkdir -p $(DIR_TEMP_BUILD)/seec && cd $(DIR_TEMP_BUILD)/seec && cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_DIR=$(CURDIR)/$(DIR_TEMP_INSTALL)/llvmtemp/share/llvm/cmake -DICU_INSTALL=$(ICU_INSTALL) -DWX_INSTALL=$(CURDIR)/$(DIR_TEMP_INSTALL)/wxWidgets -DWX_TOOLCHAIN=gtk2-unicode-static-3.0 -DMULTIARCH=$(DEB_BUILD_MULTIARCH) -DCMAKE_INSTALL_PREFIX:PATH=$(PREFIX) $(CURDIR)/src/seec
 
 #
 # LLVM - compile if llvm-config is not installed.
 #
-$(DIR_TEMP_INSTALL)/llvm/bin/llvm-config : $(DIR_TEMP_BUILD)/llvm/Makefile
+$(DIR_TEMP_INSTALL)/llvmtemp/bin/llvm-config : $(DIR_TEMP_BUILD)/llvmtemp/Makefile
 	$(ECHO) build llvm
-	cd $(DIR_TEMP_BUILD)/llvm && make -j4 ONLY_TOOLS="clang" && make install ONLY_TOOLS="clang" DESTDIR=$(CURDIR)/$(DIR_TEMP_INSTALL)
+	cd $(DIR_TEMP_BUILD)/llvmtemp && make -j4 ONLY_TOOLS="clang" && make install ONLY_TOOLS="clang" DESTDIR=$(CURDIR)/$(DIR_TEMP_INSTALL)
 
 #
 # LLVM - configure if Makefile is not present.
 #
-$(DIR_TEMP_BUILD)/llvm/Makefile : 
+$(DIR_TEMP_BUILD)/llvmtemp/Makefile : 
 	$(ECHO) configure llvm
-	mkdir -p $(DIR_TEMP_BUILD)/llvm && cd $(DIR_TEMP_BUILD)/llvm && $(CURDIR)/src/llvm/configure --enable-cxx11 --enable-optimized --prefix=/llvm
+	mkdir -p $(DIR_TEMP_BUILD)/llvmtemp && cd $(DIR_TEMP_BUILD)/llvmtemp && cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX=/llvmtemp -DCMAKE_BUILD_TYPE=Release -DLLVM_ENABLE_EH=true -DLLVM_ENABLE_PIC=true -DLLVM_ENABLE_RTTI=true $(CURDIR)/src/llvm
 
 #
 # wxWidgets - compile if wx-config is not installed.
