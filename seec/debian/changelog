@@ -1,3 +1,10 @@
+seec (0.27.0~pr1-1~trustyppa1) trusty; urgency=medium
+
+  * Pre-release test for 0.27.0.
+  * Update to LLVM/SeeC-Clang 3.8.
+
+ -- Matthew Heinsen Egan <sen.tieshar@gmail.com>  Sat, 12 Mar 2016 10:49:00 +0900
+
 seec (0.26.0~pr4-1~trustyppa1) trusty; urgency=medium
 
   * Pre-release test for 0.26.0.

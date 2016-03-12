@@ -1,6 +1,6 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: seec
-Source: <https://github.com/mheinsen/seec>
+Source: <https://github.com/seec-team/seec>
 
 Files: *
 Copyright: 2012-2013 Matthew Heinsen Egan <sen.tieshar@gmail.com>
