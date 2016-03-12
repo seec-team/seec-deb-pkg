@@ -1,0 +1,7 @@
+*.build
+*.changes
+*.upload
+*.tar.gz
+*.deb
+*.dsc
+seec/src/
