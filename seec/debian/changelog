@@ -1,3 +1,9 @@
+seec (0.27.0~pr2-1~wilyppa1) wily; urgency=medium
+
+  * Strip symbols.
+
+ -- Matthew <matthew.heinsen.egan@gmail.com>  Wed, 30 Mar 2016 23:14:34 +0900
+
 seec (0.27.0~pr1-1~wilyppa1) wily; urgency=medium
 
   * Pre-release test for 0.27.0.

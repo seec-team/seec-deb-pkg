@@ -22,7 +22,7 @@ all : $(DIR_TEMP_BUILD)/seec/tools/seec-cc/seec-cc
 
 install : $(DIR_TEMP_BUILD)/seec/tools/seec-cc/seec-cc
 	$(ECHO) install seec
-	cd $(DIR_TEMP_BUILD)/seec && make install DESTDIR=$(CURDIR)/debian/tmp/usr
+	cd $(DIR_TEMP_BUILD)/seec && make install/strip DESTDIR=$(CURDIR)/debian/tmp/usr
 
 clean :
 	$(ECHO) cleaning temporary directories
