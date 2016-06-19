@@ -7,44 +7,33 @@ These libraries are all built as part of SeeC's build process, and then statical
 We don't use the standard wxWidgets package because SeeC is a C++11 project,
 thus it requires wxWidgets to be built with `-std=c++11` also.
 
-This repository contains a folder named `seec`, containing the `debian` folder and a `Makefile`.
-Within the `seec` folder, we must create a `src` folder containing the source code for SeeC, LLVM (including SeeC-Clang), and wxWidgets.
-The entire structure should look like this:
-
+This repository uses submodules to retrieve the source code for our dependencies, namely:
 ```
-seec/
-+-- debian/
-+-- src/
-    +-- llvm/
-    +-- seec/
-    +-- wxWidgets/
-+-- Makefile
-create_orig.sh
-LICENSE
-README.md
+seec/src/llvm
+seec/src/seec
+seec/src/wxWidgets
 ```
 
+To clone the repository and the submodules you can use:  
+`$` `git` `clone` `--recursive` `https://github.com/seec-team/seec-deb-pkg.git`
 
-## Create the "upstream" source package
-
-The `create_orig.sh` script is a simple helper to create an appropriate "upstream" source package from the `seec` directory.
-In the root directory, we simply run:  
-`$` `./create_orig.sh` `0.26.0`  
-Replacing the `0.26.0` with whichever version number is appropriate.
+If you have already cloned the repository, you can initialize and/or update the submodules using:  
+`git` `submodule` `update` `--init` `--recursive`
 
 
 ## Build binary packages for local testing
 
-`seec/ $` `debuild` `-us` `-uc`  
-
-
-## Clean the build
-
-`seec/ $` `debuild` `clean`  
-`seec/ $` `rm` `-rf` `temp/`  
+In the root directory, we simply run:  
+`$` `make` `SEEC_VERSION=0.27.0`  
+Replacing the `0.27.0` with whichever version number is appropriate.
 
 
 ## Build source package
 
-`seec/ $` `debuild` `-S`  
+`$` `make` `srcpackage` `SEEC_VERSION=0.27.0`  
+
+
+## Clean the build
+
+`$` `make` `clean`  
 

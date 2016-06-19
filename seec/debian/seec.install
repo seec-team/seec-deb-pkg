@@ -6,4 +6,8 @@ usr/lib/seec
 usr/share/applications/seec.desktop
 usr/share/mime/packages/seec.xml
 usr/share/pixmaps/seec.png
+usr/share/man/man1/seec-cc.1
+usr/share/man/man1/seec-ld.1
+usr/share/man/man1/seec-print.1
+usr/share/man/man1/seec-view.1
 
