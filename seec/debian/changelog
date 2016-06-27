@@ -1,4 +1,4 @@
-seec (0.27.0~pr2-1~trustyppa1) trusty; urgency=medium
+seec (0.27.0~pr2-1~xenialppa1) xenial; urgency=medium
 
   * Strip symbols.
 
