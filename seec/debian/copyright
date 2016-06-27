@@ -8,11 +8,11 @@ License: MIT
 
 Files: src/llvm
 Copyright: 2003-2013 University of Illinois at Urbana-Champaign.
-License: LLVM Release License
+License: LLVM
 
 Files: src/wxWidgets-svn
 Copyright: 1998-2005 Julian Smart, Robert Roebling et al
-License: wxWindows Library Licence, Version 3.1
+License: wxWindows
 
 License: MIT
  The MIT License (MIT)
@@ -24,9 +24,11 @@ License: MIT
  .
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-License: LLVM Release License
+License: LLVM
+ LLVM Release License
  See src/llvm/LICENSE.txt for the full text of this license.
 
-License: wxWindows Library Licence, Version 3.1
+License: wxWindows
+ wxWindows Library Licence, Version 3.1
  See src/wxWidgets-svn/docs/licence.txt for the full text of this license.
 

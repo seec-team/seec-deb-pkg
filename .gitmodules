@@ -1,0 +1,9 @@
+[submodule "seec/src/wxWidgets"]
+	path = seec/src/wxWidgets
+	url = https://github.com/wxWidgets/wxWidgets.git
+[submodule "seec/src/seec"]
+	path = seec/src/seec
+	url = https://github.com/seec-team/seec.git
+[submodule "seec/src/llvm"]
+	path = seec/src/llvm
+	url = https://github.com/seec-team/llvm-with-seec-clang.git

@@ -3,5 +3,5 @@
 VERSION=$1
 
 mv seec seec_$VERSION
-tar -c seec_$VERSION | gzip > seec_$VERSION.orig.tar.gz
+tar -c seec_$VERSION --exclude-vcs | gzip > seec_$VERSION.orig.tar.gz
 mv seec_$VERSION seec
