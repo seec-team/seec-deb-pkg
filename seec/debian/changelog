@@ -1,3 +1,9 @@
+seec (0.30.0~pr1-1~trustyppa1) trusty; urgency=medium
+
+  * Pre-release test for 0.30.0.
+
+ -- Matthew <matthew.heinsen.egan@gmail.com>  Sat, 30 Jul 2016 09:12:19 +0900
+
 seec (0.27.0~pr2-1~trustyppa1) trusty; urgency=medium
 
   * Strip symbols.
