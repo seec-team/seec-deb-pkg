@@ -8,14 +8,14 @@ Homepage: http://seec-team.github.io/seec/
 
 Package: seec
 Architecture: i386 amd64
-Depends: ${shlibs:Depends}, ${misc:Depends}, libicu52, graphviz, libexpat1 (>= 2.1.0), libgtk2.0-0 (>= 2.24.17), libcairo2 (>= 1.12.14), libwebkitgtk-1.0-0 (>= 1.10.2-0), libfontconfig1 (>= 2.10.2-0), libfreetype6 (>= 2.4.11-0), libgcc1 (>= 1:4.7.3), libgdk-pixbuf2.0-0 (>= 2.28.0-0), libpango1.0-0 (>= 1.32.5-0), libpng12-0 (>= 1.2.49), libstdc++6 (>= 4.7.3), libcurl3 (>= 7.35.0), libjpeg62
+Depends: ${shlibs:Depends}, ${misc:Depends}, libicu55, graphviz, libexpat1 (>= 2.1.0), libgtk2.0-0 (>= 2.24.17), libcairo2 (>= 1.12.14), libwebkitgtk-1.0-0 (>= 1.10.2-0), libfontconfig1 (>= 2.10.2-0), libfreetype6 (>= 2.4.11-0), libgcc1 (>= 1:4.7.3), libgdk-pixbuf2.0-0 (>= 2.28.0-0), libpango1.0-0 (>= 1.32.5-0), libpng12-0 (>= 1.2.49), libstdc++6 (>= 4.7.3), libcurl3 (>= 7.35.0), libjpeg62
 Description: debugging tool for novice C programmers.
  This is a research prototype of SeeC, a debugging tool for novice C
  programmers. For more information see http://seec-team.github.io/seec/
 
 Package: seec-dev
 Architecture: i386 amd64
-Depends: ${misc:Depends}, libicu52
+Depends: ${misc:Depends}, libicu55
 Description: libraries for building SeeC tools.
  These libraries are designed to support the creation of debugging
  tools for novice C programmers. For more information see
