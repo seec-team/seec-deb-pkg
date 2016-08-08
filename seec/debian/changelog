@@ -1,3 +1,9 @@
+seec (0.30.0~pr2-1~wilyppa1) wily; urgency=medium
+
+  * Correct libicu dependency for wily.
+
+ -- Matthew <sen.tieshar@gmail.com>  Mon, 08 Aug 2016 10:01:07 +0800
+
 seec (0.30.0~pr1-1~wilyppa1) wily; urgency=medium
 
   * Pre-release test for 0.30.0.
