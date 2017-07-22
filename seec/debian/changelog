@@ -1,3 +1,9 @@
+seec (0.40.0~pr1-1~xenialppa1) xenial; urgency=medium
+
+  * Pre-release test for 0.40.0.
+
+ -- Matthew <sen.tieshar@gmail.com>  Sat, 22 Jul 2017 15:16:53 +0900
+
 seec (0.30.0~pr2-1~xenialppa1) xenial; urgency=medium
 
   * Correct libicu dependency for xenial.
