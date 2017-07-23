@@ -40,7 +40,7 @@ $(DIR_TEMP_BUILD)/seec/tools/seec-cc/seec-cc : $(DIR_TEMP_INSTALL)/wxWidgets/bin
 #
 $(DIR_TEMP_BUILD)/seec/Makefile :
 	$(ECHO) configure seec
-	mkdir -p $(DIR_TEMP_BUILD)/seec && cd $(DIR_TEMP_BUILD)/seec && cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_DIR=$(CURDIR)/$(DIR_TEMP_INSTALL)/llvmtemp/share/llvm/cmake -DICU_INSTALL=$(ICU_INSTALL) -DWX_INSTALL=$(CURDIR)/$(DIR_TEMP_INSTALL)/wxWidgets -DWX_TOOLCHAIN=gtk2-unicode-static-3.0 -DMULTIARCH=$(DEB_BUILD_MULTIARCH) -DCMAKE_INSTALL_PREFIX:PATH=$(PREFIX) $(CURDIR)/src/seec
+	mkdir -p $(DIR_TEMP_BUILD)/seec && cd $(DIR_TEMP_BUILD)/seec && cmake -DCMAKE_BUILD_TYPE=Release -DLLVM_DIR=$(CURDIR)/$(DIR_TEMP_INSTALL)/llvmtemp/lib/cmake/llvm -DICU_INSTALL=$(ICU_INSTALL) -DWX_INSTALL=$(CURDIR)/$(DIR_TEMP_INSTALL)/wxWidgets -DWX_TOOLCHAIN=gtk2-unicode-static-3.0 -DMULTIARCH=$(DEB_BUILD_MULTIARCH) -DCMAKE_INSTALL_PREFIX:PATH=$(PREFIX) $(CURDIR)/src/seec
 
 #
 # LLVM - compile if llvm-config is not installed.
